@@ -9,22 +9,22 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add Item"
+        android:text="@string/add_item"
         android:id="@+id/button"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:background="#b2a0f9" />
+        android:background="#b2a0f9"
+        android:onClick="simple_click" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText"
-        android:text="Hello World"
-        android:textSize="50dp"
-        android:layout_marginBottom="70dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:id="@+id/textView"
+        android:text="@string/hello_world"
+        android:textSize="50sp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
 
     <EditText
         android:layout_width="wrap_content"

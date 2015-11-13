@@ -7,10 +7,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MyActivity extends AppCompatActivity
 {
     public static String EXTRA_MESSAGE = "com.eatsleepprogram.daquarischadwick.myfirstapp.MESSAGE";
+    private boolean isHello = true;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -40,6 +42,19 @@ public class MyActivity extends AppCompatActivity
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void simple_click(View view)
+    {
+        //when click, change text
+        TextView t = (TextView)findViewById(R.id.textView);
+        if(isHello)
+        {
+            t.setText("Goodbye World");
+        }else
+        {
+            t.setText("Hello World");
+        }
     }
 
     public void sendMessage(View view)
